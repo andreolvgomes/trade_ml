@@ -1,3 +1,5 @@
+#https://github.com/dingmaotu/mql-zmq
+
 import zmq
 import pandas as pd
 import pickle
@@ -5,12 +7,12 @@ from io import StringIO
 from datetime import datetime
 
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
-from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.svm import SVC
 
 """
  carregas os obj usados durante o treinamento
 """
-best_model = pickle.load(open("model_cler.sav", 'rb'))
+best_model = pickle.load(open("SVC.ml", 'rb'))
 
 pkl_file = open('MinMaxScaler.pkl', 'rb')
 sc = pickle.load(pkl_file) 
@@ -49,7 +51,7 @@ while True:
     
     #socket.send_string("Env")
     
-    df.drop(['Ref'], axis=1, inplace=True)
+    #df.drop(['Ref'], axis=1, inplace=True)
     
     # trata os dados categóricos
     columns_categorical = df.select_dtypes(include=['object']).columns
