@@ -1,6 +1,4 @@
-# Fins didático/estudo com Machine Learning e Bot MQL5
-
-## Trabalho/Teste com Machine Learning para melhorar entradas com Bot MQL5
+## Estudo e Testes com Machine Learning para melhorar entradas com Bot MQL5
  
 - Diretório de trabalho para estudos e testes em busca de modelos de Machine Learning para melhorar entradas de Robô criados em MQL5
 
