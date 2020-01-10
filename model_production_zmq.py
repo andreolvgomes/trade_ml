@@ -51,7 +51,7 @@ while True:
     
     #socket.send_string("Env")
     
-    #df.drop(['Ref'], axis=1, inplace=True)
+    df.drop(['Ref'], axis=1, inplace=True)
     
     # trata os dados categóricos
     columns_categorical = df.select_dtypes(include=['object']).columns
