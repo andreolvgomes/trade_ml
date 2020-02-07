@@ -51,6 +51,8 @@ while True:
     
     #socket.send_string("Env")
     
+    ref = df['Ref']
+    print(ref)
     df.drop(['Ref'], axis=1, inplace=True)
     
     # trata os dados categóricos
